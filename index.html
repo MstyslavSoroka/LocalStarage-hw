@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>localstorage hw</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>to do ліст</h1>
+    <form id="form">
+      <input type="text" name="task" id="task_name" required />
+      <button type="submit" id="btn">Create</button>
+      <button id="clear">Clear</button>
+    </form>
+    <ul id="to_do_list"></ul>
+
+    <!-- ======================================1===========================================-->
+    <h1>Форма</h1>
+    <form class="feedback-form js-feedback-form">
+      <label>
+        <b>Ім'я</b>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Введите ваше имя"
+        />
+      </label>
+      <label>
+        <b>Вік</b>
+        <input
+          id="age"
+          type="number"
+          name="age"
+          placeholder="Введите ваш вік"
+        />
+      </label>
+      <label>
+        <b>Email</b>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Введите ваш email"
+        />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- =============================================2=============================== -->
+    <h1>Закладки</h1>
+    <input type="text" id="url" placeholder="Введіть URL" />
+    <button onclick="addBookmark()">Додати закладку</button>
+    <ul id="bookmark-list"></ul>
+
+    <!-- =============================================3============================= -->
+
+    <h1>Контакти</h1>
+    <input type="text" id="first-name" placeholder="Ім'я" />
+    <input type="text" id="last-name" placeholder="Прізвище" />
+    <input type="text" id="phone" placeholder="Телефон" />
+    <input type="email" id="email" placeholder="Електронна адреса" />
+    <button onclick="addContact()">Додати контакт</button>
+
+    <h2>Список контактів:</h2>
+    <ul id="contact-list"></ul>
+
+    <script src="index.js"></script>
+  </body>
+</html>
